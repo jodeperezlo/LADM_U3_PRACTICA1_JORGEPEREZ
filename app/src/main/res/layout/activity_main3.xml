@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/lblID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="ID: "
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="Descripción: "
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblFechaCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="Fecha de captura: "
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="Fecha de entrega: "
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ViewFlipper
+        android:id="@+id/VS"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="IMAGEN ENTERIOR" />
+
+        <Button
+            android:id="@+id/btnSiguiente3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="IMAGEN SIGUIENTE" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="CANCELAR" />
+</LinearLayout>

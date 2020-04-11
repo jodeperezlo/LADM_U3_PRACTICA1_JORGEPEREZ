@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Descripción"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtFechaCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Fecha de Captura DD/MM/AA"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Fecha de Entrega DD/MM/AA"
+        android:inputType="date" />
+
+    <ViewFlipper
+        android:id="@+id/layoutImagen"
+        android:layout_width="251dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/nodisponible"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"></ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="IMAGEN ANTERIOR" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="IMAGEN SIGUIENTE" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="AÑADIR FOTO" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Insertar" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Buscar" />
+
+</LinearLayout>
